@@ -8,12 +8,13 @@
 class Contact
 {
     public:
-                    Contact();
-                    ~Contact();
-        static void reformat_print(std::string &str);
+        Contact();
+        ~Contact();
         void        print(int i, int flag);
         void        att(void);
+
     private:
+        static void reformat_print(std::string &str);
         std::string firstName;
         std::string lastName;
         std::string nickName;

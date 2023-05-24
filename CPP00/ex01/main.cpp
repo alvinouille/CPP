@@ -19,6 +19,8 @@ int main()
         }
         if (str == "SEARCH")
         {
+            if (i < 7)
+                i = 7;
             if (i == -1)
                 continue;
             std::cout << "<<<< Contacts list >>>>" << std::endl;

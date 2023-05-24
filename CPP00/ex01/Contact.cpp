@@ -43,11 +43,11 @@ void    Contact::print(int i, int flag)
             std::cout << std::endl;
             break;
         case 1:
-            std::cout << firstName << std::endl;
-            std::cout << lastName << std::endl;
-            std::cout << nickName << std::endl;
-            std::cout << phoneNumber << std::endl;
-            std::cout << darkestSecret << std::endl;
+            std::cout << "firstName : " << firstName << std::endl;
+            std::cout << "lastName : " << lastName << std::endl;
+            std::cout << "nickName : " << nickName << std::endl;
+            std::cout << "phoneNumber : " << phoneNumber << std::endl;
+            std::cout << "darkestSecret : " << darkestSecret << std::endl;
             break;
     }
     return ;

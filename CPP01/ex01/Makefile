@@ -1,5 +1,5 @@
-NAME	= megaphone
-SRC		= megaphone.cpp
+NAME	= hordeZombie
+SRC		= Zombie.cpp main.cpp zombieHorde.cpp
 OBJ		= $(SRC:.cpp=.o)
 CC		= c++
 CFLAGS	= -Wall -Wextra -Werror -std=c++98
@@ -10,9 +10,6 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) -o $(NAME) $(OBJ)
-
-%.o : %.cpp
-	$(CC) $(CFLAGS) -c $< -o $@
 	
 clean:
 	$(RM) $(OBJ)

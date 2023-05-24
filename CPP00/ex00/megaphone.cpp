@@ -16,7 +16,7 @@ int main(int ac, char **av)
     {
         str += av[i];
     }
-    for(i = 0; i < str.length() ; i++)
+    for(i = 0; i < (int)str.length() ; i++)
     {
         if (std::isalpha(str[i]))
             str[i] = std::toupper(str[i]);
