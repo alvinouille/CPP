@@ -10,7 +10,10 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) -o $(NAME) $(OBJ)
-	
+
+%.o : %.cpp
+	$(CC) $(CFLAGS) -c $< -o $@
+
 clean:
 	$(RM) $(OBJ)
 	
